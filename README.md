@@ -19,8 +19,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/mdrizwanfk/fem-nft-preview-card-component
-- Live Site URL: https://fem-nft-preview-card-component.thealteredbit.ml
-
+- Live Site URL: https://fem-nft-preview-card.thealteredbit.ml/
+- Netlify URL: https://fem-nft-prvw-card-cmpnt.netlify.app/
 
 ### Built with
 
