@@ -1,0 +1,258 @@
+:root {
+  --breakpoint-mobile-tablet: 425px;
+  --breakpoint-tablet-desktop: 992px;
+
+  font-size: 62.5%;
+
+  --ff-primary: "Outfit", sans-serif;
+
+  --clr-pr-soft-blue: hsl(215, 51%, 70%);
+  --clr-pr-cyan: hsl(178, 100%, 50%);
+  --clr-neu-very-dark-blue-1: hsl(217, 54%, 11%);
+  --clr-neu-very-dark-blue-2: hsl(216, 50%, 16%);
+  --clr-neu-very-dark-blue-3: hsl(215, 32%, 27%);
+  --clr-neu-white: hsl(0, 0%, 100%);
+
+  --clr-sp-body: var(--clr-pr-soft-blue);
+  --clr-sp-main-bg: var(--clr-neu-very-dark-blue-1);
+  --clr-sp-card-bg: var(--clr-neu-very-dark-blue-2);
+  --clr-sp-line: var(--clr-neu-very-dark-blue-3);
+
+  --fs-500: 1.8rem;
+  --fs-600: 2rem;
+  --fs-700: 2.1rem;
+
+  --fs-body: var(--fs-500);
+  --fs-heading: var(--fs-600);
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --fw-heading: var(--fw-600);
+  --fw-body: var(--fw-300);
+  --fw-body-emphasis: var(--fw-400);
+
+  --brdr-radius-500: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+  }
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+.text-clr-pr-soft-blue {
+  color: var(--clr-pr-soft-blue);
+}
+
+.text-clr-pr-cyan {
+  color: var(--clr-pr-cyan);
+}
+
+.text-clr-neu-very-dark-blue-1 {
+  color: var(--clr-neu-very-dark-blue-1);
+}
+
+.text-clr-neu-very-dark-blue-2 {
+  color: var(--clr-neu-very-dark-blue-2);
+}
+
+.text-clr-neu-very-dark-blue-3 {
+  color: var(--clr-neu-very-dark-blue-3);
+}
+
+.text-clr-neu-white {
+  color: var(--clr-neu-white);
+}
+
+.bg-clr-pr-soft-blue {
+  background-color: var(--clr-pr-soft-blue);
+}
+
+.bg-clr-pr-cyan {
+  background-color: var(--clr-pr-cyan);
+}
+
+.bg-clr-neu-very-dark-blue-1 {
+  background-color: var(--clr-neu-very-dark-blue-1);
+}
+
+.bg-clr-neu-very-dark-blue-2 {
+  background-color: var(--clr-neu-very-dark-blue-2);
+}
+
+.bg-clr-neu-very-dark-blue-3 {
+  background-color: var(--clr-neu-very-dark-blue-3);
+}
+
+.bg-clr-neu-white {
+  background-color: var(--clr-neu-white);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-body {
+  font-size: var(--fs-body);
+}
+
+.fs-heading {
+  font-size: var(--fs-heading);
+}
+
+.fw-heading {
+  font-weight: var(--fw-heading);
+}
+
+.fw-body {
+  font-weight: var(--fw-body);
+}
+
+.fw-body-emphasis {
+  font-weight: var(--fw-body-emphasis);
+}
+
+/* Special Classes */
+.bg-clr-main {
+  background-color: var(--clr-sp-main-bg);
+}
+
+.bg-clr-card {
+  background-color: var(--clr-sp-card-bg);
+}
+
+.geometry-clr-line {
+  color: var(--clr-sp-line);
+}
+
+/* FEM Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-neu-white);
+}
+.attribution a {
+  color: var(--clr-pr-cyan);
+}
+
+/* Body */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  color: var(--clr-sp-body);
+  background-color: var(--clr-sp-main-bg);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-body);
+  font-size: var(--fs-body);
+}
+
+#nft-card {
+  margin: 2rem;
+  max-width: 36rem;
+  padding: 2.5rem;
+  border-radius: var(--brdr-radius-500);
+}
+
+#nft-preview {
+  border-radius: var(--brdr-radius-500);
+  margin-bottom: 2rem;
+}
+
+#nft-card h1 {
+  margin-bottom: 1.3rem;
+}
+
+#nft-card > p {
+  margin-bottom: 1.3rem;
+}
+
+.price-time,
+.price,
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-time {
+  margin-bottom: 1rem;
+}
+
+.price > img,
+.time > img {
+  margin-right: 0.5rem;
+}
+
+#nft-card footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-top: 0.2rem solid var(--clr-sp-line);
+  padding: 1.5rem 0 0;
+}
+
+#nft-card footer > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--clr-neu-white);
+  margin-right: 1rem;
+}
